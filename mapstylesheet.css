@@ -39,23 +39,23 @@ aside{
 	border: 2px solid red;
 }
 
-.location{
+.button{
 	display:block;
-	border:2px solix blue;
+	border:2px solid red;
 	cursor:pointer;
 	-webkit-transition: background .3s linear;
 			transition: backround .3s linear;
 	text-decoration:none;
 }
 #langdalehall{
-	top:447px;
-	left:257px;
+	top:445px;
+	left:255px;
 }
 
 .innerpopup{
 	padding: 20px 15px;
 }
-.location:focus .popup {
+.button:focus .popup {
   display: inline-block;
 }
 .popup__title {
@@ -71,7 +71,7 @@ aside{
   display: none;
 }
 
-.location:focus .popup__text {
+.button:focus .popup__text {
   height: auto;
 }
 
@@ -88,14 +88,14 @@ aside{
     top: 0;
     left: 0;
   }
-  .location {
+  .button {
     position: absolute;
     width: 8px;
     height: 8px;
     border-radius: 50%;
   }
-  .location:hover,
-  .location:focus {
+  .button:hover,
+  .button:focus {
     background: #fff;
   }
   .popup {
@@ -114,7 +114,7 @@ aside{
     border: 9px solid #fff;
     border-radius: 4px;
   }
-  .location:focus .popup {
+  .button:focus .popup {
     opacity: 1;
     width: auto;
     height: auto;
