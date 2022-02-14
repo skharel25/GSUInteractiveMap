@@ -2,6 +2,10 @@
 	margin: 0;
 }
 
+:focus {
+  outline: none;
+}
+
 body {
 	font-family: Ariel;
 }
@@ -15,6 +19,10 @@ main {
 	margin-left:auto;
 	margin-right:auto;
 	border:3px solid yellow;
+	height:710px;
+	width: 52.1%;
+	position: relative;
+	margin: 0 auto;
 }
 
 aside{
@@ -22,7 +30,115 @@ aside{
 	border: 3px solid blue;
 }
 
+.map{
+	display:none;
+}
+
 .interactive {
 	flex-basis: 67%;
-	border: 3px solid red;
+	border: 2px solid red;
+}
+
+.location{
+	display:block;
+	border:2px solix blue;
+	cursor:pointer;
+	-webkit-transition: background .3s linear;
+			transition: backround .3s linear;
+	text-decoration:none;
+}
+#langdalehall{
+	top:447px;
+	left:257px;
+}
+
+.innerpopup{
+	padding: 20px 15px;
+}
+.location:focus .popup {
+  display: inline-block;
+}
+.popup__title {
+  margin: 0;
+}
+
+.popup__text {
+  margin: 0;
+  height: 0;
+  overflow: hidden;
+}
+.popup__text br {
+  display: none;
+}
+
+.location:focus .popup__text {
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .interactive {
+    position: relative;
+    height: 0;
+    padding-bottom: 52.91666666666667%;
+  }
+  .map {
+    display: block;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .location {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+  .location:hover,
+  .location:focus {
+    background: #fff;
+  }
+  .popup {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+            transition: opacity 0.5s ease-in-out;
+    position: absolute;
+  }
+  .innerpopup {
+    display: inline-block;
+    white-space: nowrap;
+    background: #ffd200;
+    border: 9px solid #fff;
+    border-radius: 4px;
+  }
+  .location:focus .popup {
+    opacity: 1;
+    width: auto;
+    height: auto;
+  }
+  .popup__topleft {
+    right: 20px;
+    bottom: -1px;
+  }
+  .popup__topright {
+    left: 20px;
+    bottom: -1px;
+  }
+  .popup__bottomleft {
+    right: 20px;
+    top: -1px;
+  }
+  .popup__bottomright {
+    left: 20px;
+    top: -1px;
+  }
+  .popup__text {
+    height: auto;
+  }
+  .popup__text br {
+    display: block;
+  }
 }
