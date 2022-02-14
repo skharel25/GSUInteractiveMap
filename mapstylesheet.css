@@ -6,3 +6,14 @@ body {
 	font-family: Ariel;
 }
 
+main {
+	display:flex;
+}
+
+aside{
+	flex-basis: 33%;
+}
+
+.interactive {
+	flex-basis: 67%;
+}
