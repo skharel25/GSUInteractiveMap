@@ -6,14 +6,23 @@ body {
 	font-family: Ariel;
 }
 
+h1{
+	text-align:center;
+	font-weight:bold;
+}
 main {
 	display:flex;
+	margin-left:auto;
+	margin-right:auto;
+	border:3px solid yellow;
 }
 
 aside{
 	flex-basis: 33%;
+	border: 3px solid blue;
 }
 
 .interactive {
 	flex-basis: 67%;
+	border: 3px solid red;
 }
