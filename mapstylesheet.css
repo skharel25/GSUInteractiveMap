@@ -2,6 +2,10 @@
 	margin: 0;
 }
 
+:focus {
+  outline: none;
+}
+
 body {
 	font-family: Ariel;
 	background: #6495ED
@@ -53,7 +57,7 @@ aside{
 
 #librarynorth{
 	top:470px;
-	left:282px;
+	left:284px;
 }
 
 #kellhall{
@@ -73,7 +77,7 @@ aside{
 
 #west {
 	top: 484px;
-	left:311px;
+	left:314px;
 }
 
 #urbanlife {
@@ -87,13 +91,13 @@ aside{
 }
 
 #studentrecreation {
-	top: 507px;
-	left: 398px;
+	top: 509px;
+	left: 400px;
 }
 
 #librarysouth {
-	top: 496px;
-	left: 261px;
+	top: 498px;
+	left: 262px;
 }
 
 #classroomsouth {
@@ -102,8 +106,8 @@ aside{
 }
 
 #petit {
-	top: 585px;
-	left: 332px;
+	top: 586px;
+	left: 333px;
 }
 
 
@@ -161,7 +165,15 @@ aside{
     border: 0;
     border-radius: 4px;
   }
-
+  .button:focus .popup {
+    opacity: 1;
+    width: auto;
+    height: auto;
+  }
+  .popup__topright {
+    left: 20px;
+    bottom: -1px;
+  }
   .popup__text {
     height: auto;
   }
