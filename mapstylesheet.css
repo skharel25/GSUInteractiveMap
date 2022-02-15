@@ -8,6 +8,7 @@
 
 body {
 	font-family: Ariel;
+	background: #6495ED
 }
 
 h1{
@@ -39,9 +40,14 @@ aside{
 	border: 2px solid red;
 }
 
+.popimage {
+	height: 300px;
+	width: auto;
+}
+
 .button{
 	display:block;
-	border:1px dashed red;
+	border:2px solid #1E90FF;
 	cursor:pointer;
 	-webkit-transition: background .3s linear;
 			transition: backround .3s linear;
@@ -58,6 +64,57 @@ aside{
 	left:282px;
 }
 
+#kellhall{
+	top:425px;
+	left:275px;
+}
+
+#artsandhumanities{
+	top:407px;
+	left:288px;
+}
+
+#sparks{
+	top:435px;
+	left:310px;
+}
+
+#west {
+	top: 484px;
+	left:311px;
+}
+
+#urbanlife {
+	top: 505px;
+	left:342px;
+}
+
+#east {
+	top: 479px;
+	left: 364px;
+}
+
+#studentrecreation {
+	top: 507px;
+	left: 398px;
+}
+
+#librarysouth {
+	top: 496px;
+	left: 261px;
+}
+
+#classroomsouth {
+	top: 476px;
+	left: 242px;
+}
+
+#petit {
+	top: 585px;
+	left: 332px;
+}
+
+
 .innerpopup{
 	padding: 20px 15px;
 }
@@ -71,6 +128,9 @@ aside{
 .popup__text {
   margin: 0;
   height: 0;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
   overflow: hidden;
 }
 .popup__text br {
@@ -81,7 +141,7 @@ aside{
   height: auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen{
   .interactive {
     position: relative;
     height: 0;
@@ -116,8 +176,8 @@ aside{
   .innerpopup {
     display: inline-block;
     white-space: nowrap;
-    background: #ffd200;
-    border: 9px solid #fff;
+    background: #6495ED;
+    border: 0;
     border-radius: 4px;
   }
   .button:focus .popup {
@@ -125,21 +185,9 @@ aside{
     width: auto;
     height: auto;
   }
-  .popup__topleft {
-    right: 20px;
-    bottom: -1px;
-  }
   .popup__topright {
     left: 20px;
     bottom: -1px;
-  }
-  .popup__bottomleft {
-    right: 20px;
-    top: -1px;
-  }
-  .popup__bottomright {
-    left: 20px;
-    top: -1px;
   }
   .popup__text {
     height: auto;
