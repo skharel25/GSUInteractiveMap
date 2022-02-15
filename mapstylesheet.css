@@ -2,10 +2,6 @@
 	margin: 0;
 }
 
-:focus {
-  outline: none;
-}
-
 body {
 	font-family: Ariel;
 	background: #6495ED
@@ -19,7 +15,6 @@ main {
 	display:flex;
 	margin-left:auto;
 	margin-right:auto;
-	border:3px solid yellow;
 	height:710px;
 	width: 52.1%;
 	position: relative;
@@ -37,7 +32,6 @@ aside{
 
 .interactive {
 	flex-basis: 67%;
-	border: 2px solid red;
 }
 
 .popimage {
@@ -49,8 +43,6 @@ aside{
 	display:block;
 	border:2px solid #1E90FF;
 	cursor:pointer;
-	-webkit-transition: background .3s linear;
-			transition: backround .3s linear;
 	text-decoration:none;
 	background:white;
 }
@@ -118,9 +110,7 @@ aside{
 .innerpopup{
 	padding: 20px 15px;
 }
-.button:focus .popup {
-  display: inline-block;
-}
+
 .popup__title {
   margin: 0;
 }
@@ -133,13 +123,7 @@ aside{
   font-weight: bold;
   overflow: hidden;
 }
-.popup__text br {
-  display: none;
-}
 
-.button:focus .popup__text {
-  height: auto;
-}
 
 @media screen{
   .interactive {
@@ -160,10 +144,7 @@ aside{
     height: 8px;
     border-radius: 50%;
   }
-  .button:hover,
-  .button:focus {
-    background: #fff;
-  }
+
   .popup {
     width: 0;
     height: 0;
@@ -180,15 +161,7 @@ aside{
     border: 0;
     border-radius: 4px;
   }
-  .button:focus .popup {
-    opacity: 1;
-    width: auto;
-    height: auto;
-  }
-  .popup__topright {
-    left: 20px;
-    bottom: -1px;
-  }
+
   .popup__text {
     height: auto;
   }
