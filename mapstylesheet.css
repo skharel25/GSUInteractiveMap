@@ -2,10 +2,6 @@
 	margin: 0;
 }
 
-:focus {
-  outline: none;
-}
-
 body {
 	font-family: Ariel;
 	background: #6495ED
@@ -28,6 +24,14 @@ main {
 aside{
 	flex-basis: 33%;
 	border: 3px solid blue;
+}
+
+.banner{
+	position: fixed;
+	bottom: 5%;
+	text-align: center;
+	margin-left: 15%;
+	margin-right: 15%;
 }
 
 .map{
@@ -116,10 +120,6 @@ aside{
 	padding: 20px 15px;
 }
 
-.popup__title {
-  margin: 0;
-}
-
 .popup__text {
   margin: 0;
   height: 0;
@@ -142,6 +142,7 @@ aside{
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 45px;
   }
   .button {
     position: absolute;
@@ -156,7 +157,6 @@ aside{
     overflow: hidden;
     opacity: 0;
     -webkit-transition: opacity 0.5s ease-in-out;
-            transition: opacity 0.5s ease-in-out;
     position: absolute;
   }
   .innerpopup {
@@ -164,7 +164,8 @@ aside{
     white-space: nowrap;
     background: #6495ED;
     border: 0;
-    border-radius: 4px;
+    border-radius: 5px;
+
   }
   .button:focus .popup {
     opacity: 1;
